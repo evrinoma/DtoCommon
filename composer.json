@@ -25,6 +25,8 @@
             "/Tests/"
         ]
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": {
         "dto": {
             "type": "vcs",
