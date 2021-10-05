@@ -15,8 +15,8 @@ interface IdInterface
 
 //region SECTION: Getters/Setters
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int;
+    public function getId(): string;
 //endregion Getters/Setters
 }
