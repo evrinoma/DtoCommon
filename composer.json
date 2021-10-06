@@ -14,8 +14,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "evrinoma/dto-bundle": "dev-master",
-        "evrinoma/utils-bundle": "dev-master"
+        "evrinoma/dto-bundle": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -31,10 +30,6 @@
         "dto": {
             "type": "vcs",
             "url": "https://github.com/evrinoma/DtoBundle.git"
-        },
-        "utils": {
-            "type": "vcs",
-            "url": "https://github.com/evrinoma/UtilsBundle.git"
         }
     }
 }
