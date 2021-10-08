@@ -5,7 +5,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 trait IdTrait
 {
 //region SECTION: Fields
-    private string $id = '';
+    private ?int $id = null;
 //endregion Fields
 
 //region SECTION: Public
@@ -14,7 +14,7 @@ trait IdTrait
      */
     public function hasId(): bool
     {
-        return $this->id !== '';
+        return $this->id !== null;
     }
 //endregion Public
 
@@ -22,7 +22,7 @@ trait IdTrait
     /**
      * @return string
      */
-    public function getId(): string
+    public function getId(): int
     {
         return $this->id;
     }

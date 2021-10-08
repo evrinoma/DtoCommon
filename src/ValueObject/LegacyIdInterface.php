@@ -5,9 +5,9 @@ namespace Evrinoma\DtoCommon\ValueObject;
 interface LegacyIdInterface
 {
     /**
-     * @return string|null
+     * @return int|null
      */
-    public function getLegacyId(): ?string;
+    public function getLegacyId(): ?int;
 
     /**
      * @return bool

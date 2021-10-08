@@ -4,12 +4,12 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 trait LegacyIdTrait
 {
-    private ?string $legacyId  = null;
+    private ?int $legacyId = null;
 
     /**
      * @return string|null
      */
-    public function getLegacyId(): ?string
+    public function getLegacyId(): ?int
     {
         return $this->legacyId;
     }
