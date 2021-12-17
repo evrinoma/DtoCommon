@@ -7,7 +7,7 @@ trait LegacyIdTrait
     private ?int $legacyId = null;
 
     /**
-     * @return string|null
+     * @return int|null
      */
     public function getLegacyId(): ?int
     {
