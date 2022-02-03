@@ -12,10 +12,14 @@ trait IdTrait
 
     /**
      * @param int|null $id
+     *
+     * @return self
      */
-    protected function setId(?int $id): void
+    protected function setId(?int $id): self
     {
         $this->id = $id;
+
+        return $this;
     }
 //endregion Protected
 }

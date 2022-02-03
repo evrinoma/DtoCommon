@@ -12,10 +12,14 @@ trait BriefTrait
 
     /**
      * @param string $brief
+     *
+     * @return self
      */
-    protected function setBrief(string $brief): void
+    protected function setBrief(string $brief): self
     {
         $this->brief = $brief;
+
+        return $this;
     }
 //endregion Protected
 

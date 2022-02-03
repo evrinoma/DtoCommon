@@ -12,10 +12,14 @@ trait DependencyTrait
 
     /**
      * @param string $dependency
+     *
+     * @return self
      */
-    protected function setDependency(string $dependency): void
+    protected function setDependency(string $dependency): self
     {
         $this->dependency = $dependency;
+
+        return $this;
     }
 //endregion Protected
 }

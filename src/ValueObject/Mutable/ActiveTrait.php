@@ -12,10 +12,14 @@ trait ActiveTrait
 
     /**
      * @param string $active
+     *
+     * @return self
      */
-    protected function setActive(string $active): void
+    protected function setActive(string $active): self
     {
         $this->active = $active;
+
+        return $this;
     }
 //endregion Protected
 }

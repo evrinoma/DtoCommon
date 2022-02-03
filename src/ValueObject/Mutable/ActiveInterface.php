@@ -7,7 +7,9 @@ interface ActiveInterface
 //region SECTION: Getters/Setters
     /**
      * @param string $active
+     *
+     * @return self
      */
-    public function setActive(string $active): void;
+    public function setActive(string $active): self;
 //endregion Getters/Setters
 }

@@ -12,10 +12,14 @@ trait NameTrait
 
     /**
      * @param string $name
+     *
+     * @return self
      */
-    protected function setName(string $name): void
+    protected function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
     }
 //endregion Protected
 }

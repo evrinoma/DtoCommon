@@ -8,7 +8,9 @@ interface IdentityInterface
 //region SECTION: Getters/Setters
     /**
      * @param string $identity
+     *
+     * @return self
      */
-    public function setIdentity(string $identity): void;
+    public function setIdentity(string $identity): self;
 //endregion Getters/Setters
 }

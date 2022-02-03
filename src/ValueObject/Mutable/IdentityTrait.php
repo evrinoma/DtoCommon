@@ -12,10 +12,14 @@ trait IdentityTrait
 
     /**
      * @param string $identity
+     *
+     * @return self
      */
-    protected function setIdentity(string $identity): void
+    protected function setIdentity(string $identity): self
     {
         $this->identity = $identity;
+
+        return $this;
     }
 //endregion Protected
 }

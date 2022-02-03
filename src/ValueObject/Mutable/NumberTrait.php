@@ -12,10 +12,14 @@ trait NumberTrait
 
     /**
      * @param string $number
+     *
+     * @return self
      */
-    public function setNumber(string $number): void
+    public function setNumber(string $number): self
     {
         $this->number = $number;
+
+        return $this;
     }
 //endregion Getters/Setters
 

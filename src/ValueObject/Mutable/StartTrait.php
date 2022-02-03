@@ -12,10 +12,14 @@ trait StartTrait
 
     /**
      * @param string $start
+     *
+     * @return self
      */
-    protected function setStart(string $start): void
+    protected function setStart(string $start): self
     {
         $this->start = $start;
+
+        return $this;
     }
 //endregion Protected
 }

@@ -13,10 +13,14 @@ trait UpdatedAtTrait
 
     /**
      * @param string $updatedAt
+     *
+     * @return self
      */
-    protected function setUpdatedAt(string $updatedAt): void
+    protected function setUpdatedAt(string $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
     }
 //endregion Protected
 }

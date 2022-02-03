@@ -8,7 +8,9 @@ interface LegacyIdInterface
 //region SECTION: Getters/Setters
     /**
      * @param int|null $legacyId
+     *
+     * @return self
      */
-    public function setLegacyId(?int $legacyId): void;
+    public function setLegacyId(?int $legacyId): self;
 //endregion Getters/Setters
 }

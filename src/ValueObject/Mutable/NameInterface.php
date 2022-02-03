@@ -8,7 +8,9 @@ interface NameInterface
 //region SECTION: Getters/Setters
     /**
      * @param string $name
+     *
+     * @return self
      */
-    public function setName(string $name): void;
+    public function setName(string $name): self;
 //endregion Getters/Setters
 }

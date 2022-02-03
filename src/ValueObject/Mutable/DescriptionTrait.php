@@ -13,10 +13,14 @@ trait DescriptionTrait
 
     /**
      * @param string $description
+     *
+     * @return self
      */
-    protected function setDescription(string $description): void
+    protected function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
     }
 //endregion Protected
 }

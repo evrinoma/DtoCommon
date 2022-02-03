@@ -9,13 +9,19 @@ trait FinishTrait
     use FinishImmutableTrait;
 
 //region SECTION: Protected
+//endregion Protected
 
+//region SECTION: Getters/Setters
     /**
      * @param string $finish
+     *
+     * @return self
      */
-    public function setFinish(string $finish): void
+    public function setFinish(string $finish): self
     {
         $this->finish = $finish;
+
+        return $this;
     }
-//endregion Protected
+//endregion Getters/Setters
 }

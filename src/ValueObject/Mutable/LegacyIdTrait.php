@@ -12,10 +12,14 @@ trait LegacyIdTrait
 
     /**
      * @param int|null $legacyId
+     *
+     * @return self
      */
-    protected function setLegacyId(?int $legacyId): void
+    protected function setLegacyId(?int $legacyId): self
     {
         $this->legacyId = $legacyId;
+
+        return $this;
     }
 //endregion Protected
 }

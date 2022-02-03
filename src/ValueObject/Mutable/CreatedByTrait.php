@@ -12,10 +12,14 @@ trait CreatedByTrait
 
     /**
      * @param string $createdBy
+     *
+     * @return self
      */
-    protected function setCreatedBy(string $createdBy): void
+    protected function setCreatedBy(string $createdBy): self
     {
         $this->createdBy = $createdBy;
+
+        return $this;
     }
 //endregion Protected
 }
