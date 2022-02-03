@@ -1,0 +1,15 @@
+<?php
+
+namespace Evrinoma\DtoCommon\ValueObject\Mutable;
+
+use Evrinoma\DtoCommon\ValueObject\Immutable\BriefInterface as BriefImmutableInterface;
+
+interface BriefInterface extends BriefImmutableInterface
+{
+//region SECTION: Getters/Setters
+    /**
+     * @param string $brief
+     */
+    public function setBrief(string $brief): void;
+//endregion Getters/Setters
+}
