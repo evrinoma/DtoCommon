@@ -4,6 +4,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface LegacyIdInterface
 {
+    public const LEGACY_ID = 'legacy_id';
     /**
      * @return int|null
      */

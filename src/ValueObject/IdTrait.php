@@ -10,7 +10,7 @@ trait IdTrait
 
 //region SECTION: Public
     /**
-     * @return int
+     * @return bool
      */
     public function hasId(): bool
     {
@@ -20,7 +20,7 @@ trait IdTrait
 
 //region SECTION: Getters/Setters
     /**
-     * @return string
+     * @return int|null
      */
     public function getId(): ?int
     {

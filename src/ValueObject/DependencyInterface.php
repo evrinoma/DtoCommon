@@ -5,6 +5,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface DependencyInterface
 {
+    public const DEPENDENCY = 'dependency';
     /**
      * @return bool
      */

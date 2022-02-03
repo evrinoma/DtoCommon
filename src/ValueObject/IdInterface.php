@@ -6,6 +6,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface IdInterface
 {
+    public const ID = 'id';
 //region SECTION: Public
     /**
      * @return bool

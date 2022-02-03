@@ -5,6 +5,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface ActiveInterface
 {
+    public const ACTIVE = 'active';
     /**
      * @return bool
      */

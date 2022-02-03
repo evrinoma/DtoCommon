@@ -5,6 +5,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface StartInterface
 {
+    public const START = 'date_start';
 //region SECTION: Public
     /**
      * @return bool

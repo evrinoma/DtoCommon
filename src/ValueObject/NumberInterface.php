@@ -3,20 +3,21 @@
 namespace Evrinoma\DtoCommon\ValueObject;
 
 
-interface CreatedAtInterface
+interface NumberInterface
 {
-    public const CREATED_AT = 'created_at';
+    public const NUMBER = 'number';
 //region SECTION: Public
+
     /**
      * @return bool
      */
-    public function hasCreatedAt(): bool;
+    public function hasNumber(): bool;
 //endregion Public
 
 //region SECTION: Getters/Setters
     /**
      * @return string
      */
-    public function getCreatedAt(): string;
+    public function getNumber(): string;
 //endregion Getters/Setters
 }

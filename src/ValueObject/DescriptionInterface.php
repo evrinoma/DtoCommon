@@ -6,6 +6,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface DescriptionInterface
 {
+    public const DESCRIPTION = 'description';
     /**
      * @return bool
      */

@@ -5,6 +5,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface IdentityInterface
 {
+    public const IDENTITY = 'identity';
     /**
      * @return bool
      */

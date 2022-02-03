@@ -4,6 +4,7 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface CreatedByInterface
 {
+    public const CREATED_BY = 'created_by';
 //region SECTION: Public
     /**
      * @return bool
