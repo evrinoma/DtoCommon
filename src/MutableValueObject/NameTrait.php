@@ -8,6 +8,7 @@ trait NameTrait
 {
     use NameImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $name
      */
@@ -15,4 +16,5 @@ trait NameTrait
     {
         $this->name = $name;
     }
+//endregion Protected
 }

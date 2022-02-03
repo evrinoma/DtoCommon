@@ -2,14 +2,15 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\LegacyIdTrait as LegacyIdTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\LegacyIdTrait as LegacyIdImmutableTrait;
 
 trait LegacyIdTrait
 {
 
-    use LegacyIdTraitImmutable;
+    use LegacyIdImmutableTrait;
 
 
+//region SECTION: Protected
     /**
      * @param int|null $legacyId
      */
@@ -17,4 +18,5 @@ trait LegacyIdTrait
     {
         $this->legacyId = $legacyId;
     }
+//endregion Protected
 }

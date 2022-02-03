@@ -2,13 +2,14 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\IdentityTrait as IdentityTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\IdentityTrait as IdentityImmutableTrait;
 
 trait IdentityTrait
 {
 
-    use IdentityTraitImmutable;
+    use IdentityImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $identity
      */
@@ -16,4 +17,5 @@ trait IdentityTrait
     {
         $this->identity = $identity;
     }
+//endregion Protected
 }

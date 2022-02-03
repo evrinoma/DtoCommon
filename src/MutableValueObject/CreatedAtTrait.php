@@ -2,12 +2,13 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\CreatedAtTrait as CreatedAtTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\CreatedAtTrait as CreatedAtImmutableTrait;
 
 trait CreatedAtTrait
 {
-    use CreatedAtTraitImmutable;
+    use CreatedAtImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $createdAt
      */
@@ -15,4 +16,5 @@ trait CreatedAtTrait
     {
         $this->createdAt = $createdAt;
     }
+//endregion Protected
 }

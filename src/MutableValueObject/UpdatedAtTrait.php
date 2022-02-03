@@ -10,6 +10,7 @@ trait UpdatedAtTrait
 
     use UpdatedAtImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $updatedAt
      */
@@ -17,4 +18,5 @@ trait UpdatedAtTrait
     {
         $this->updatedAt = $updatedAt;
     }
+//endregion Protected
 }

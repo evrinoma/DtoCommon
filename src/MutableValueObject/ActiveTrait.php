@@ -2,12 +2,13 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\ActiveTrait as ActiveTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\ActiveTrait as ActiveImmutableTrait;
 
 trait ActiveTrait
 {
-    use ActiveTraitImmutable;
+    use ActiveImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $active
      */
@@ -15,4 +16,5 @@ trait ActiveTrait
     {
         $this->active = $active;
     }
+//endregion Protected
 }

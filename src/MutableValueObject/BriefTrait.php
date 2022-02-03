@@ -2,12 +2,13 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\BriefTrait as BriefTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\BriefTrait as BriefImmutableTrait;
 
 trait BriefTrait
 {
-    use BriefTraitImmutable;
+    use BriefImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $brief
      */
@@ -15,5 +16,6 @@ trait BriefTrait
     {
         $this->brief = $brief;
     }
+//endregion Protected
 
 }

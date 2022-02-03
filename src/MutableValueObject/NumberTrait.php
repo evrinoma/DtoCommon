@@ -9,6 +9,7 @@ trait NumberTrait
 
     use NumberImmutableTrait;
 
+//region SECTION: Getters/Setters
     /**
      * @param string $number
      */
@@ -16,5 +17,6 @@ trait NumberTrait
     {
         $this->number = $number;
     }
+//endregion Getters/Setters
 
 }

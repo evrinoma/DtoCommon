@@ -9,6 +9,7 @@ trait StartTrait
 
     use StartImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $start
      */
@@ -16,4 +17,5 @@ trait StartTrait
     {
         $this->start = $start;
     }
+//endregion Protected
 }

@@ -9,6 +9,7 @@ trait DependencyTrait
 
     use ImmutableDependencyTrait;
 
+//region SECTION: Protected
     /**
      * @param string $dependency
      */
@@ -16,4 +17,5 @@ trait DependencyTrait
     {
         $this->dependency = $dependency;
     }
+//endregion Protected
 }

@@ -8,6 +8,7 @@ trait CreatedByTrait
 {
     use ImmutableCreatedByTrait;
 
+//region SECTION: Protected
     /**
      * @param string $createdBy
      */
@@ -15,4 +16,5 @@ trait CreatedByTrait
     {
         $this->createdBy = $createdBy;
     }
+//endregion Protected
 }

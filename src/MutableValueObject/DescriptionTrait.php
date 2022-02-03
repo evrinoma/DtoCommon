@@ -3,12 +3,13 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\DescriptionTrait as DescriptionTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\DescriptionTrait as DescriptionImmutableTrait;
 
 trait DescriptionTrait
 {
-    use DescriptionTraitImmutable;
+    use DescriptionImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param string $description
      */
@@ -16,4 +17,5 @@ trait DescriptionTrait
     {
         $this->description = $description;
     }
+//endregion Protected
 }

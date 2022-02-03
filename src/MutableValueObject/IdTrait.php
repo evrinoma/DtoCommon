@@ -8,6 +8,7 @@ trait IdTrait
 {
     use ImmutableIdTrait;
 
+//region SECTION: Protected
     /**
      * @param int|null $id
      */
@@ -15,4 +16,5 @@ trait IdTrait
     {
         $this->id = $id;
     }
+//endregion Protected
 }

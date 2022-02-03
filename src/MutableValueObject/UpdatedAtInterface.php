@@ -8,8 +8,10 @@ use Evrinoma\DtoCommon\ValueObject\UpdatedAtInterface as UpdatedAtImmutableInter
 
 interface UpdatedAtInterface extends UpdatedAtImmutableInterface
 {
+//region SECTION: Getters/Setters
     /**
      * @param string $updatedAt
      */
     public function setUpdatedAt(string $updatedAt): void;
+//endregion Getters/Setters
 }

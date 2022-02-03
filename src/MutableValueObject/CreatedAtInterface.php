@@ -6,8 +6,10 @@ use Evrinoma\DtoCommon\ValueObject\CreatedAtInterface as CreatedAtImmutableInter
 
 interface CreatedAtInterface extends CreatedAtImmutableInterface
 {
+//region SECTION: Getters/Setters
     /**
      * @param string $createdAt
      */
     public function setCreatedAt(string $createdAt): void;
+//endregion Getters/Setters
 }

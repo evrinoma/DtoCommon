@@ -2,13 +2,14 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\IdTrait as FinishTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\IdTrait as FinishImmutableTrait;
 
 trait FinishTrait
 {
 
-    use FinishTraitImmutable;
+    use FinishImmutableTrait;
 
+//region SECTION: Protected
     /**
      * @param int|null $id
      */
@@ -16,6 +17,7 @@ trait FinishTrait
     {
         $this->id = $id;
     }
+//endregion Protected
 
 
 }
