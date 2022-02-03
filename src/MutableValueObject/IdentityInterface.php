@@ -3,9 +3,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\IdentityInterface as IdentityInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\IdentityInterface as IdentityImmutableInterface;
 
-interface IdentityInterface extends IdentityInterfaceImmutable
+interface IdentityInterface extends IdentityImmutableInterface
 {
     /**
      * @param string $identity

@@ -2,9 +2,9 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\ActiveInterface as ActiveInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\ActiveInterface as ActiveImmutableInterface;
 
-interface ActiveInterface extends ActiveInterfaceImmutable
+interface ActiveInterface extends ActiveImmutableInterface
 {
     /**
      * @param string $active

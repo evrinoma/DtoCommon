@@ -3,9 +3,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\FinishInterface as FinishInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\FinishInterface as FinishImmutableInterface;
 
-interface FinishInterface extends FinishInterfaceImmutable
+interface FinishInterface extends FinishImmutableInterface
 {
     /**
      * @param int|null $id

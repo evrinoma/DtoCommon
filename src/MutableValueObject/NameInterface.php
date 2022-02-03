@@ -3,9 +3,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\NameInterface as NameInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\NameInterface as NameImmutableInterface;
 
-interface NameInterface extends NameInterfaceImmutable
+interface NameInterface extends NameImmutableInterface
 {
     /**
      * @param string $name

@@ -2,12 +2,11 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\NameTrait as NameTraitImmutable;
+use Evrinoma\DtoCommon\ValueObject\NameTrait as NameImmutableTrait;
 
 trait NameTrait
 {
-
-    use NameTraitImmutable;
+    use NameImmutableTrait;
 
     /**
      * @param string $name

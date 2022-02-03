@@ -3,9 +3,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\DependencyInterface as DependencyInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\DependencyInterface as DependencyImmutableInterface;
 
-interface DependencyInterface extends DependencyInterfaceImmutable
+interface DependencyInterface extends DependencyImmutableInterface
 {
     /**
      * @param string $dependency

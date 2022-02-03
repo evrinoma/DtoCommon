@@ -2,9 +2,9 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\LegacyIdInterface as LegacyIdInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\LegacyIdInterface as LegacyIdImmutableInterface;
 
-interface LegacyIdInterface extends LegacyIdInterfaceImmutable
+interface LegacyIdInterface extends LegacyIdImmutableInterface
 {
     /**
      * @param int|null $legacyId

@@ -4,9 +4,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\DescriptionInterface as DescriptionInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\DescriptionInterface as DescriptionImmutableInterface;
 
-interface DescriptionInterface extends DescriptionInterfaceImmutable
+interface DescriptionInterface extends DescriptionImmutableInterface
 {
     /**
      * @param string $description

@@ -2,9 +2,9 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\CreatedAtInterface as CreatedAtInterfaceImmutableInterface;
+use Evrinoma\DtoCommon\ValueObject\CreatedAtInterface as CreatedAtImmutableInterface;
 
-interface CreatedAtInterface extends CreatedAtInterfaceImmutableInterface
+interface CreatedAtInterface extends CreatedAtImmutableInterface
 {
     /**
      * @param string $createdAt

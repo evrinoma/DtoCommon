@@ -4,9 +4,9 @@
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
 
-use Evrinoma\DtoCommon\ValueObject\IdInterface as IdInterfaceImmutable;
+use Evrinoma\DtoCommon\ValueObject\IdInterface as IdImmutableInterface;
 
-interface IdInterface extends IdInterfaceImmutable
+interface IdInterface extends IdImmutableInterface
 {
     /**
      * @param int|null $id
