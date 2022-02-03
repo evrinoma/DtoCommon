@@ -2,9 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\ActiveInterface as ActiveImmutableInterface;
-
-interface ActiveInterface extends ActiveImmutableInterface
+interface ActiveInterface
 {
 //region SECTION: Getters/Setters
     /**

@@ -6,7 +6,6 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\NumberTrait as NumberImmutableTrait
 
 trait NumberTrait
 {
-
     use NumberImmutableTrait;
 
 //region SECTION: Getters/Setters

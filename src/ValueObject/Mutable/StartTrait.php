@@ -6,7 +6,6 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\StartTrait as StartImmutableTrait;
 
 trait StartTrait
 {
-
     use StartImmutableTrait;
 
 //region SECTION: Protected

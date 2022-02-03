@@ -3,9 +3,7 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\NumberInterface as NumberImmutableInterface;
-
-interface NumberInterface extends NumberImmutableInterface
+interface NumberInterface
 {
 //region SECTION: Getters/Setters
     /**

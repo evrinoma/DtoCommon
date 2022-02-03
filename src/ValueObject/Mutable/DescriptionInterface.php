@@ -3,10 +3,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-
-use Evrinoma\DtoCommon\ValueObject\Immutable\DescriptionInterface as DescriptionImmutableInterface;
-
-interface DescriptionInterface extends DescriptionImmutableInterface
+interface DescriptionInterface
 {
 //region SECTION: Getters/Setters
     /**

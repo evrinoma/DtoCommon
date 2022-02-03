@@ -4,9 +4,7 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\IdInterface as IdImmutableInterface;
-
-interface IdInterface extends IdImmutableInterface
+interface IdInterface
 {
 //region SECTION: Getters/Setters
     /**

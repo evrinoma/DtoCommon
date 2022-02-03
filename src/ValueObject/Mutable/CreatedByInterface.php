@@ -2,9 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\CreatedByInterface as CreatedByImmutableInterface;
-
-interface CreatedByInterface extends CreatedByImmutableInterface
+interface CreatedByInterface
 {
 //region SECTION: Getters/Setters
     /**

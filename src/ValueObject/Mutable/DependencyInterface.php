@@ -2,10 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-
-use Evrinoma\DtoCommon\ValueObject\Immutable\DependencyInterface as DependencyImmutableInterface;
-
-interface DependencyInterface extends DependencyImmutableInterface
+interface DependencyInterface
 {
 //region SECTION: Getters/Setters
     /**

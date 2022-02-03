@@ -3,9 +3,7 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\NameInterface as NameImmutableInterface;
-
-interface NameInterface extends NameImmutableInterface
+interface NameInterface
 {
 //region SECTION: Getters/Setters
     /**

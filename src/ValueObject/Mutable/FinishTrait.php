@@ -2,23 +2,20 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\IdTrait as FinishImmutableTrait;
+use Evrinoma\DtoCommon\ValueObject\Immutable\FinishTrait as FinishImmutableTrait;
 
 trait FinishTrait
 {
-
     use FinishImmutableTrait;
 
 //region SECTION: Protected
 
     /**
-     * @param int|null $id
+     * @param string $finish
      */
-    protected function setId(?int $id): void
+    public function setFinish(string $finish): void
     {
-        $this->id = $id;
+        $this->finish = $finish;
     }
 //endregion Protected
-
-
 }

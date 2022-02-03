@@ -4,9 +4,7 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\UpdatedAtInterface as UpdatedAtImmutableInterface;
-
-interface UpdatedAtInterface extends UpdatedAtImmutableInterface
+interface UpdatedAtInterface
 {
 //region SECTION: Getters/Setters
     /**

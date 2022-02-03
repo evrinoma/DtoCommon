@@ -6,7 +6,6 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\IdentityTrait as IdentityImmutableT
 
 trait IdentityTrait
 {
-
     use IdentityImmutableTrait;
 
 //region SECTION: Protected

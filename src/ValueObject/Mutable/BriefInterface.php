@@ -2,9 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\BriefInterface as BriefImmutableInterface;
-
-interface BriefInterface extends BriefImmutableInterface
+interface BriefInterface
 {
 //region SECTION: Getters/Setters
     /**

@@ -7,7 +7,6 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\UpdatedAtTrait as UpdatedAtImmutabl
 
 trait UpdatedAtTrait
 {
-
     use UpdatedAtImmutableTrait;
 
 //region SECTION: Protected

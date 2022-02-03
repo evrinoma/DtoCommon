@@ -6,9 +6,7 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\LegacyIdTrait as LegacyIdImmutableT
 
 trait LegacyIdTrait
 {
-
     use LegacyIdImmutableTrait;
-
 
 //region SECTION: Protected
 

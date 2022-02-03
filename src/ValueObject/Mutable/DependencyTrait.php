@@ -6,7 +6,6 @@ use Evrinoma\DtoCommon\ValueObject\Immutable\DependencyTrait as ImmutableDepende
 
 trait DependencyTrait
 {
-
     use ImmutableDependencyTrait;
 
 //region SECTION: Protected

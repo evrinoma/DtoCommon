@@ -3,9 +3,7 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\StartInterface as StartImmutableInterface;
-
-interface StartInterface extends StartImmutableInterface
+interface StartInterface
 {
 //region SECTION: Getters/Setters
     /**

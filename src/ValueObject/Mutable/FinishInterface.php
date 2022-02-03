@@ -3,14 +3,12 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\FinishInterface as FinishImmutableInterface;
-
-interface FinishInterface extends FinishImmutableInterface
+interface FinishInterface
 {
 //region SECTION: Getters/Setters
     /**
-     * @param int|null $id
+     * @param string $finish
      */
-    public function setId(?int $id): void;
+    public function setFinish(string $finish): void;
 //endregion Getters/Setters
 }
