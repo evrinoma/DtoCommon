@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\BriefTrait as BriefImmutableTrait;
 
 trait BriefTrait
@@ -13,9 +14,9 @@ trait BriefTrait
     /**
      * @param string $brief
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setBrief(string $brief): self
+    protected function setBrief(string $brief): DtoInterface
     {
         $this->brief = $brief;
 

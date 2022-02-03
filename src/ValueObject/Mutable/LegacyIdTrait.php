@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\LegacyIdTrait as LegacyIdImmutableTrait;
 
 trait LegacyIdTrait
@@ -13,9 +14,9 @@ trait LegacyIdTrait
     /**
      * @param int|null $legacyId
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setLegacyId(?int $legacyId): self
+    protected function setLegacyId(?int $legacyId): DtoInterface
     {
         $this->legacyId = $legacyId;
 

@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\StartTrait as StartImmutableTrait;
 
 trait StartTrait
@@ -13,9 +14,9 @@ trait StartTrait
     /**
      * @param string $start
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setStart(string $start): self
+    protected function setStart(string $start): DtoInterface
     {
         $this->start = $start;
 

@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\CreatedByTrait as ImmutableCreatedByTrait;
 
 trait CreatedByTrait
@@ -13,9 +14,9 @@ trait CreatedByTrait
     /**
      * @param string $createdBy
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setCreatedBy(string $createdBy): self
+    protected function setCreatedBy(string $createdBy): DtoInterface
     {
         $this->createdBy = $createdBy;
 

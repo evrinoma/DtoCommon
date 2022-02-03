@@ -3,6 +3,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\UpdatedAtTrait as UpdatedAtImmutableTrait;
 
 trait UpdatedAtTrait
@@ -14,9 +15,9 @@ trait UpdatedAtTrait
     /**
      * @param string $updatedAt
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setUpdatedAt(string $updatedAt): self
+    protected function setUpdatedAt(string $updatedAt): DtoInterface
     {
         $this->updatedAt = $updatedAt;
 

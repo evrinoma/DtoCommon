@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\IdTrait as ImmutableIdTrait;
 
 trait IdTrait
@@ -13,9 +14,9 @@ trait IdTrait
     /**
      * @param int|null $id
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setId(?int $id): self
+    protected function setId(?int $id): DtoInterface
     {
         $this->id = $id;
 

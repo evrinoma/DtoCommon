@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\NameTrait as NameImmutableTrait;
 
 trait NameTrait
@@ -13,9 +14,9 @@ trait NameTrait
     /**
      * @param string $name
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setName(string $name): self
+    protected function setName(string $name): DtoInterface
     {
         $this->name = $name;
 

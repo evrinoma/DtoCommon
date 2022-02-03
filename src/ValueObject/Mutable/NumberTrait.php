@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\NumberTrait as NumberImmutableTrait;
 
 trait NumberTrait
@@ -13,9 +14,9 @@ trait NumberTrait
     /**
      * @param string $number
      *
-     * @return self
+     * @return DtoInterface
      */
-    public function setNumber(string $number): self
+    public function setNumber(string $number): DtoInterface
     {
         $this->number = $number;
 

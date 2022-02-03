@@ -4,14 +4,16 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
+
 interface IdInterface
 {
 //region SECTION: Getters/Setters
     /**
      * @param int|null $id
      *
-     * @return self
+     * @return DtoInterface
      */
-    public function setId(?int $id): self;
+    public function setId(?int $id): DtoInterface;
 //endregion Getters/Setters
 }

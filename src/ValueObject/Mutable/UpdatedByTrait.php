@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\UpdatedByTrait as UpdatedByImmutableTrait;
 
 trait UpdatedByTrait
@@ -13,9 +14,9 @@ trait UpdatedByTrait
     /**
      * @param string $updatedBy
      *
-     * @return self
+     * @return DtoInterface
      */
-    protected function setUpdatedBy(string $updatedBy): self
+    protected function setUpdatedBy(string $updatedBy): DtoInterface
     {
         $this->updatedBy = $updatedBy;
 

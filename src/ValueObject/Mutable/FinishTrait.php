@@ -2,6 +2,7 @@
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\DtoCommon\ValueObject\Immutable\FinishTrait as FinishImmutableTrait;
 
 trait FinishTrait
@@ -15,9 +16,9 @@ trait FinishTrait
     /**
      * @param string $finish
      *
-     * @return self
+     * @return DtoInterface
      */
-    public function setFinish(string $finish): self
+    public function setFinish(string $finish): DtoInterface
     {
         $this->finish = $finish;
 

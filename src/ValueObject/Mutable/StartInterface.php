@@ -3,14 +3,16 @@
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
+
 interface StartInterface
 {
 //region SECTION: Getters/Setters
     /**
      * @param string $start
      *
-     * @return self
+     * @return DtoInterface
      */
-    public function setStart(string $start): self;
+    public function setStart(string $start): DtoInterface;
 //endregion Getters/Setters
 }
