@@ -2,11 +2,11 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\ActiveTrait as ImmutableActiveTrait;
+use Evrinoma\DtoCommon\ValueObject\ActiveTrait as ActiveTraitImmutable;
 
 trait ActiveTrait
 {
-    use ImmutableActiveTrait;
+    use ActiveTraitImmutable;
 
     /**
      * @param string $active

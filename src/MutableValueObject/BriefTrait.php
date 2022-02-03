@@ -2,11 +2,11 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\BriefTrait as ImmutableBriefTrait;
+use Evrinoma\DtoCommon\ValueObject\BriefTrait as BriefTraitImmutable;
 
 trait BriefTrait
 {
-    use ImmutableBriefTrait;
+    use BriefTraitImmutable;
 
     /**
      * @param string $brief

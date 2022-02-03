@@ -2,9 +2,9 @@
 
 namespace Evrinoma\DtoCommon\MutableValueObject;
 
-use Evrinoma\DtoCommon\ValueObject\BriefInterface as ImmutableBriefInterface;
+use Evrinoma\DtoCommon\ValueObject\BriefInterface as BriefImmutableInterface;
 
-interface BriefInterface extends ImmutableBriefInterface
+interface BriefInterface extends BriefImmutableInterface
 {
     /**
      * @param string $brief
