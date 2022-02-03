@@ -2,8 +2,6 @@
 
 namespace Evrinoma\DtoCommon\ValueObject;
 
-use DateTimeImmutable;
-
 trait CreatedAtTrait
 {
 //region SECTION: Fields
@@ -22,7 +20,7 @@ trait CreatedAtTrait
 
 //region SECTION: Getters/Setters
     /**
-     * @return DateTimeImmutable
+     * @return string
      */
     public function getCreatedAt(): string
     {
