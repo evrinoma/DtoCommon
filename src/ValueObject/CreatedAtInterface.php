@@ -5,8 +5,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface CreatedAtInterface
 {
+//region SECTION: Fields
     public const CREATED_AT = 'created_at';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

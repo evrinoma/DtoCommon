@@ -5,8 +5,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface NameInterface
 {
+//region SECTION: Fields
     public const NAME = 'name';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

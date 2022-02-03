@@ -4,8 +4,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface BriefInterface
 {
+//region SECTION: Fields
     public const BRIEF = 'brief';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

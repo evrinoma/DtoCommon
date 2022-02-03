@@ -6,8 +6,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface UpdatedByInterface
 {
+//region SECTION: Fields
     public const UPDATED_BY = 'updated_by';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

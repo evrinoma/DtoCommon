@@ -4,11 +4,14 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 trait NumberTrait
 {
+//region SECTION: Fields
     /**
      * @var string
      */
     private string $number = '';
+//endregion Fields
 
+//region SECTION: Public
     /**
      * @return bool
      */
@@ -16,7 +19,9 @@ trait NumberTrait
     {
         return $this->number !== '';
     }
+//endregion Public
 
+//region SECTION: Getters/Setters
     /**
      * @return string
      */
@@ -24,4 +29,5 @@ trait NumberTrait
     {
         return $this->number;
     }
+//endregion Getters/Setters
 }

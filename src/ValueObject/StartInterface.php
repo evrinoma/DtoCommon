@@ -5,8 +5,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface StartInterface
 {
+//region SECTION: Fields
     public const START = 'date_start';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

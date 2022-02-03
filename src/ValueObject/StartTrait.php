@@ -4,8 +4,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 trait StartTrait
 {
+//region SECTION: Fields
     private string $start = '';
+//endregion Fields
 
+//region SECTION: Public
     /**
      * @return bool
      */
@@ -13,7 +16,9 @@ trait StartTrait
     {
         return $this->start !== '';
     }
+//endregion Public
 
+//region SECTION: Getters/Setters
     /**
      * @return string
      */
@@ -21,4 +26,5 @@ trait StartTrait
     {
         return $this->start;
     }
+//endregion Getters/Setters
 }

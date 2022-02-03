@@ -5,8 +5,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface FinishInterface
 {
+//region SECTION: Fields
     public const FINISH = 'date_finish';
+//endregion Fields
 //region SECTION: Public
+
     /**
      * @return bool
      */

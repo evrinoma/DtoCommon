@@ -4,16 +4,11 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 trait LegacyIdTrait
 {
+//region SECTION: Fields
     private ?int $legacyId = null;
+//endregion Fields
 
-    /**
-     * @return int|null
-     */
-    public function getLegacyId(): ?int
-    {
-        return $this->legacyId;
-    }
-
+//region SECTION: Public
     /**
      * @return bool
      */
@@ -21,4 +16,15 @@ trait LegacyIdTrait
     {
         return $this->legacyId !== null;
     }
+//endregion Public
+
+//region SECTION: Getters/Setters
+    /**
+     * @return int|null
+     */
+    public function getLegacyId(): ?int
+    {
+        return $this->legacyId;
+    }
+//endregion Getters/Setters
 }

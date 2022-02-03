@@ -5,7 +5,9 @@ namespace Evrinoma\DtoCommon\ValueObject;
 
 interface NumberInterface
 {
+//region SECTION: Fields
     public const NUMBER = 'number';
+//endregion Fields
 //region SECTION: Public
 
     /**
