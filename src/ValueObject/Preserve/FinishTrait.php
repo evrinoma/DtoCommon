@@ -1,14 +1,11 @@
 <?php
 
-namespace Evrinoma\DtoCommon\ValueObject\Mutable;
+namespace Evrinoma\DtoCommon\ValueObject\Preserve;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
-use Evrinoma\DtoCommon\ValueObject\Immutable\FinishTrait as FinishImmutableTrait;
 
 trait FinishTrait
 {
-    use FinishImmutableTrait;
-
 //region SECTION: Getters/Setters
     /**
      * @param string $finish
@@ -17,9 +14,7 @@ trait FinishTrait
      */
     public function setFinish(string $finish): DtoInterface
     {
-        $this->finish = $finish;
-
-        return $this;
+        return parent::setFinish($finish);
     }
 //endregion Getters/Setters
 }
