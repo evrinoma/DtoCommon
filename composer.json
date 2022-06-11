@@ -14,8 +14,7 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "evrinoma/dto-bundle": "dev-master",
-        "friendsofphp/php-cs-fixer": "^3.8"
+        "evrinoma/dto-bundle": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -32,5 +31,8 @@
             "type": "vcs",
             "url": "https://github.com/evrinoma/DtoBundle.git"
         }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.4|^3.8"
     }
 }
