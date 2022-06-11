@@ -27,7 +27,7 @@ trait ActiveTrait
      */
     protected function setActive(string $active): DtoInterface
     {
-        $this->active = $active;
+        $this->active = trim($active);
 
         return $this;
     }

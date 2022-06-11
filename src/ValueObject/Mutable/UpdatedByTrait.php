@@ -27,7 +27,7 @@ trait UpdatedByTrait
      */
     protected function setUpdatedBy(string $updatedBy): DtoInterface
     {
-        $this->updatedBy = $updatedBy;
+        $this->updatedBy = trim($updatedBy);
 
         return $this;
     }

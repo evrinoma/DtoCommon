@@ -27,7 +27,7 @@ trait CreatedByTrait
      */
     protected function setCreatedBy(string $createdBy): DtoInterface
     {
-        $this->createdBy = $createdBy;
+        $this->createdBy = trim($createdBy);
 
         return $this;
     }

@@ -27,7 +27,7 @@ trait StartTrait
      */
     protected function setStart(string $start): DtoInterface
     {
-        $this->start = $start;
+        $this->start = trim($start);
 
         return $this;
     }

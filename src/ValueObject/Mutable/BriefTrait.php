@@ -27,7 +27,7 @@ trait BriefTrait
      */
     protected function setBrief(string $brief): DtoInterface
     {
-        $this->brief = $brief;
+        $this->brief = trim($brief);
 
         return $this;
     }

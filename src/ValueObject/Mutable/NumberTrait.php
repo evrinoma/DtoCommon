@@ -27,7 +27,7 @@ trait NumberTrait
      */
     public function setNumber(string $number): DtoInterface
     {
-        $this->number = $number;
+        $this->number = trim($number);
 
         return $this;
     }

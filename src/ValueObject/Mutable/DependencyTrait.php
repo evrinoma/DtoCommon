@@ -27,7 +27,7 @@ trait DependencyTrait
      */
     protected function setDependency(string $dependency): DtoInterface
     {
-        $this->dependency = $dependency;
+        $this->dependency = trim($dependency);
 
         return $this;
     }

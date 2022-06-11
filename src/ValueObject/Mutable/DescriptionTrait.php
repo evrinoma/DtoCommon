@@ -27,7 +27,7 @@ trait DescriptionTrait
      */
     protected function setDescription(string $description): DtoInterface
     {
-        $this->description = $description;
+        $this->description = trim($description);
 
         return $this;
     }

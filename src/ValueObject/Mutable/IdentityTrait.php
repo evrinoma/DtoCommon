@@ -27,7 +27,7 @@ trait IdentityTrait
      */
     protected function setIdentity(string $identity): DtoInterface
     {
-        $this->identity = $identity;
+        $this->identity = trim($identity);
 
         return $this;
     }

@@ -27,7 +27,7 @@ trait UpdatedAtTrait
      */
     protected function setUpdatedAt(string $updatedAt): DtoInterface
     {
-        $this->updatedAt = $updatedAt;
+        $this->updatedAt = trim($updatedAt);
 
         return $this;
     }

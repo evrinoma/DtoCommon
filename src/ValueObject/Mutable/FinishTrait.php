@@ -27,7 +27,7 @@ trait FinishTrait
      */
     public function setFinish(string $finish): DtoInterface
     {
-        $this->finish = $finish;
+        $this->finish = trim($finish);
 
         return $this;
     }

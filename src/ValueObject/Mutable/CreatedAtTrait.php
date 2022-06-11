@@ -27,7 +27,7 @@ trait CreatedAtTrait
      */
     protected function setCreatedAt(string $createdAt): DtoInterface
     {
-        $this->createdAt = $createdAt;
+        $this->createdAt = trim($createdAt);
 
         return $this;
     }
