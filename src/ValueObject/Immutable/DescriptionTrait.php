@@ -1,25 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the package.
+ *
+ * (c) Nikolay Nikolaev <evrinoma@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 trait DescriptionTrait
 {
-//region SECTION: Fields
     private string $description = '';
-//endregion Fields
 
-//region SECTION: Public
     /**
      * @return bool
      */
     public function hasDescription(): bool
     {
-        return $this->description !== '';
+        return '' !== $this->description;
     }
-//endregion Public
 
-//region SECTION: Getters/Setters
     /**
      * @return string
      */
@@ -27,5 +32,4 @@ trait DescriptionTrait
     {
         return $this->description;
     }
-//endregion Getters/Setters
 }

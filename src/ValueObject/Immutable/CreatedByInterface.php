@@ -1,24 +1,29 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the package.
+ *
+ * (c) Nikolay Nikolaev <evrinoma@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 interface CreatedByInterface
 {
-//region SECTION: Fields
     public const CREATED_BY = 'created_by';
-//endregion Fields
-//region SECTION: Public
 
     /**
      * @return bool
      */
     public function hasCreatedBy(): bool;
-//endregion Public
 
-//region SECTION: Getters/Setters
     /**
      * @return string
      */
     public function getCreatedBy(): string;
-//endregion Getters/Setters
 }
