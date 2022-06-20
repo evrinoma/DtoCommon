@@ -13,9 +13,11 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
+
 trait IdTrait
 {
-    private ?int $id = null;
+    private ?string $id = null;
 
     /**
      * @return bool
@@ -26,10 +28,26 @@ trait IdTrait
     }
 
     /**
-     * @return int|null
+     * @return string|null
      */
-    public function getId(): ?int
+    public function getId(): ?string
     {
         return $this->id;
+    }
+
+    /**
+     * @return DtoInterface
+     */
+    public function Id(): DtoInterface
+    {
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function toInt(): ?int
+    {
+        return $this->id === null ?  $this->id :(int) $this->id;
     }
 }

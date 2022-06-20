@@ -21,11 +21,11 @@ trait IdTrait
     use ImmutableIdTrait;
 
     /**
-     * @param int|null $id
+     * @param string|null $id
      *
      * @return DtoInterface
      */
-    protected function setId(?int $id): DtoInterface
+    protected function setId(?string $id): DtoInterface
     {
         $this->id = $id;
 

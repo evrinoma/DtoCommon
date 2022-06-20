@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
+use Evrinoma\DtoBundle\Dto\DtoInterface;
+
 interface IdInterface
 {
     public const ID = 'id';
@@ -23,7 +25,17 @@ interface IdInterface
     public function hasId(): bool;
 
     /**
-     * @return int
+     * @return string|null
      */
-    public function getId(): ?int;
+    public function getId(): ?string;
+
+    /**
+     * @return DtoInterface
+     */
+    public function Id(): DtoInterface;
+
+    /**
+     * @return int|null
+     */
+    public function toInt(): ?int;
 }
