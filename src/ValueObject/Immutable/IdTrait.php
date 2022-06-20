@@ -48,6 +48,6 @@ trait IdTrait
      */
     public function toInt(): ?int
     {
-        return $this->id === null ?  $this->id :(int) $this->id;
+        return null === $this->id ? $this->id : (int) $this->id;
     }
 }
