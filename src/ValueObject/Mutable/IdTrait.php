@@ -21,13 +21,17 @@ trait IdTrait
     use ImmutableIdTrait;
 
     /**
-     * @param int|null $id
+     * @param int|string|null $id
      *
      * @return DtoInterface
      */
-    protected function setId(?int $id): DtoInterface
+    protected function setId($id): DtoInterface
     {
-        $this->id = $id;
+        if (\is_string($id)) {
+            $this->idParseString($id);
+        } else {
+            $this->idParseInt($id);
+        }
 
         return $this;
     }
@@ -40,6 +44,18 @@ trait IdTrait
     protected function idParseString(?string $id): DtoInterface
     {
         $this->id = (int) $id;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $id
+     *
+     * @return DtoInterface
+     */
+    protected function idParseInt(?int $id): DtoInterface
+    {
+        $this->id = $id;
 
         return $this;
     }

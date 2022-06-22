@@ -13,8 +13,6 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
-use Evrinoma\DtoBundle\Dto\DtoInterface;
-
 interface IdInterface
 {
     public const ID = 'id';

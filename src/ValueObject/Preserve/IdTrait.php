@@ -18,11 +18,11 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 trait IdTrait
 {
     /**
-     * @param int|null $id
+     * @param int|string|null $id
      *
      * @return DtoInterface
      */
-    public function setId(?int $id): DtoInterface
+    public function setId($id): DtoInterface
     {
         return parent::setId($id);
     }
@@ -35,5 +35,15 @@ trait IdTrait
     public function idParseString(?string $id): DtoInterface
     {
         return parent::idParseString($id);
+    }
+
+    /**
+     * @param int|null $id
+     *
+     * @return DtoInterface
+     */
+    public function idParseInt(?int $id): DtoInterface
+    {
+        return parent::idParseInt($id);
     }
 }

@@ -22,7 +22,14 @@ interface IdInterface
      *
      * @return DtoInterface
      */
-    public function setId(?int $id): DtoInterface;
+    public function setId($id): DtoInterface;
+
+    /**
+     * @param int|null $id
+     *
+     * @return DtoInterface
+     */
+    public function idParseInt(?int $id): DtoInterface;
 
     /**
      * @param string|null $id
