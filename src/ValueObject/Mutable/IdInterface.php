@@ -18,9 +18,16 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 interface IdInterface
 {
     /**
+     * @param int|null $id
+     *
+     * @return DtoInterface
+     */
+    public function setId(?int $id): DtoInterface;
+
+    /**
      * @param string|null $id
      *
      * @return DtoInterface
      */
-    public function setId(?string $id): DtoInterface;
+    public function idParseString(?string $id): DtoInterface;
 }

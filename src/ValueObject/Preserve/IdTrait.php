@@ -18,12 +18,22 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 trait IdTrait
 {
     /**
+     * @param int|null $id
+     *
+     * @return DtoInterface
+     */
+    public function setId(?int $id): DtoInterface
+    {
+        return parent::setId($id);
+    }
+
+    /**
      * @param string|null $id
      *
      * @return DtoInterface
      */
-    public function setId(?string $id): DtoInterface
+    public function idParseString(?string $id): DtoInterface
     {
-        return parent::setId($id);
+        return parent::idParseString($id);
     }
 }

@@ -17,7 +17,7 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 
 trait IdTrait
 {
-    private ?string $id = null;
+    private ?int $id = null;
 
     /**
      * @return bool
@@ -28,26 +28,18 @@ trait IdTrait
     }
 
     /**
-     * @return string|null
+     * @return int|null
      */
-    public function getId(): ?string
+    public function getId(): ?int
     {
         return $this->id;
     }
 
     /**
-     * @return DtoInterface
+     * @return string
      */
-    public function Id(): DtoInterface
+    public function idToString(): ?string
     {
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function toInt(): ?int
-    {
-        return null === $this->id ? $this->id : (int) $this->id;
+        return null === $this->id ? $this->id : (string) $this->id;
     }
 }

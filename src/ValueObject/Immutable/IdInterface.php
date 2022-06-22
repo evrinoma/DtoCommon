@@ -25,17 +25,12 @@ interface IdInterface
     public function hasId(): bool;
 
     /**
-     * @return string|null
-     */
-    public function getId(): ?string;
-
-    /**
-     * @return DtoInterface
-     */
-    public function Id(): DtoInterface;
-
-    /**
      * @return int|null
      */
-    public function toInt(): ?int;
+    public function getId(): ?int;
+
+    /**
+     * @return string|null
+     */
+    public function idToString(): ?string;
 }
