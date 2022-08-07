@@ -22,7 +22,7 @@ trait IdentityTrait
      *
      * @return DtoInterface
      */
-    protected function setIdentity(string $identity): DtoInterface
+    public function setIdentity(string $identity): DtoInterface
     {
         return parent::setIdentity($identity);
     }
