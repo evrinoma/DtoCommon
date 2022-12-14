@@ -15,7 +15,7 @@ namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 interface BodyInterface
 {
-    public const ACTIVE = 'body';
+    public const BODY = 'body';
 
     /**
      * @return bool
