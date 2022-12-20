@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
-use Evrinoma\VideoContentBundle\DtoCommon\ValueObject\Immutable\VideoTrait as VideoImmutableTrait;
+use Evrinoma\DtoCommon\ValueObject\Immutable\VideoTrait as VideoImmutableTrait;
 use Symfony\Component\HttpFoundation\File\File;
 
 trait VideoTrait

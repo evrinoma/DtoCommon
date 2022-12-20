@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\AdvantageBundle\DtoCommon\ValueObject\Immutable\LogoTrait as LogoImmutableTrait;
 use Evrinoma\DtoBundle\Dto\DtoInterface;
+use Evrinoma\DtoCommon\ValueObject\Immutable\LogoTrait as LogoImmutableTrait;
 use Symfony\Component\HttpFoundation\File\File;
 
 trait LogoTrait

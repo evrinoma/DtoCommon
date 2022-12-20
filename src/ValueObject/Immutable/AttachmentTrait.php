@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Evrinoma\toCommon\ValueObject\Immutable;
+namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 use Symfony\Component\HttpFoundation\File\File;
 
@@ -19,7 +19,7 @@ trait AttachmentTrait
 {
     private ?File $attachment = null;
 
-    public function getAttachment(): File
+    public function getAttachment(): ?File
     {
         return $this->attachment;
     }

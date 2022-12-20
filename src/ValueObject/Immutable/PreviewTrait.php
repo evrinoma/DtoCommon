@@ -19,7 +19,7 @@ trait PreviewTrait
 {
     private ?File $preview = null;
 
-    public function getPreview(): File
+    public function getPreview(): ?File
     {
         return $this->preview;
     }

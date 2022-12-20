@@ -19,7 +19,7 @@ trait LogoTrait
 {
     private ?File $logo = null;
 
-    public function getLogo(): File
+    public function getLogo(): ?File
     {
         return $this->logo;
     }

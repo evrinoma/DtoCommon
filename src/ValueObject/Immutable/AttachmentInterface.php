@@ -19,7 +19,7 @@ interface AttachmentInterface
 {
     public const ATTACHMENT = 'attachment';
 
-    public function getAttachment(): File;
+    public function getAttachment(): ?File;
 
     public function hasAttachment(): bool;
 }

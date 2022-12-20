@@ -19,7 +19,7 @@ interface PreviewInterface
 {
     public const PREVIEW = 'preview';
 
-    public function getPreview(): File;
+    public function getPreview(): ?File;
 
     public function hasPreview(): bool;
 }

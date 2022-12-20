@@ -19,7 +19,7 @@ interface LogoInterface
 {
     public const LOGO = 'logo';
 
-    public function getLogo(): File;
+    public function getLogo(): ?File;
 
     public function hasLogo(): bool;
 }
