@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Evrinoma\ArticleBundle\DtoCommon\ValueObject\Immutable\AttachmentTrait as AttachmentImmutableTrait;
+use Evrinoma\DtoBundle\Dto\DtoInterface;
 use Symfony\Component\HttpFoundation\File\File;
 
 trait AttachmentTrait

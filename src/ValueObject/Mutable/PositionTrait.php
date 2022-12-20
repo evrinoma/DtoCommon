@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
-use Evrinoma\DtoCommon\ValueObject\Immutable\PositionTrait as ImmutablePositionTrait;
 use Evrinoma\DtoBundle\Dto\DtoInterface;
+use Evrinoma\DtoCommon\ValueObject\Immutable\PositionTrait as ImmutablePositionTrait;
 
 trait PositionTrait
 {
