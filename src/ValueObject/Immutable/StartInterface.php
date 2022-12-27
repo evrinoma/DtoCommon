@@ -15,7 +15,7 @@ namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 interface StartInterface
 {
-    public const START = 'date_start';
+    public const START = 'start';
 
     /**
      * @return bool

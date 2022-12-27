@@ -15,7 +15,7 @@ namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 interface FinishInterface
 {
-    public const FINISH = 'date_finish';
+    public const FINISH = 'finish';
 
     /**
      * @return bool
