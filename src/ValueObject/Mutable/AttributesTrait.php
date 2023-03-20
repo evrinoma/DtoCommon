@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
-use Evrinoma\MenuBundle\DtoCommon\ValueObject\Immutable\AttributesTrait as AttributesImmutableTrait;
+use Evrinoma\DtoCommon\ValueObject\Immutable\AttributesTrait as AttributesImmutableTrait;
 
 trait AttributesTrait
 {
