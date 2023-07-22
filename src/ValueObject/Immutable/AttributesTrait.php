@@ -15,6 +15,9 @@ namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 trait AttributesTrait
 {
+    /**
+     * @var string[]
+     */
     private array $attributes = [];
 
     /**
