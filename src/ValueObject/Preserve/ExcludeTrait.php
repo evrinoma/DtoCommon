@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Evrinoma\DtoCommon\ValueObject\Mutable;
+namespace Evrinoma\DtoCommon\ValueObject\Preserve;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
 
