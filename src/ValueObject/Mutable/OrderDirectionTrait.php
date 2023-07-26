@@ -21,6 +21,21 @@ trait OrderDirectionTrait
     use OrderDirectionImmutableTrait;
 
     /**
+     * @param  string       $orderDirection
+     * @return DtoInterface
+     */
+    protected function setOrderDirection(string $orderDirection = 'ASC'): DtoInterface
+    {
+        if ('ASC' === $orderDirection) {
+            $this->setOrderDirectionAsc();
+        } else {
+            $this->setOrderDirectionDesc();
+        }
+
+        return $this;
+    }
+
+    /**
      * @return DtoInterface
      */
     protected function setOrderDirectionDesc(): DtoInterface

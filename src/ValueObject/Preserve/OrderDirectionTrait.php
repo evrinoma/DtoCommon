@@ -17,13 +17,8 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 
 trait OrderDirectionTrait
 {
-    public function setOrderDirectionDesc(): DtoInterface
+    public function setOrderDirection(string $orderDirection): DtoInterface
     {
-        return parent::setOrderDirectionDesc();
-    }
-
-    public function setOrderDirectionAsc(): DtoInterface
-    {
-        return parent::setOrderDirectionAsc();
+        return parent::setOrderDirection($orderDirection);
     }
 }

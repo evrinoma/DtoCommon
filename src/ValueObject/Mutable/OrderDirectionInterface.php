@@ -17,7 +17,5 @@ use Evrinoma\DtoBundle\Dto\DtoInterface;
 
 interface OrderDirectionInterface
 {
-    public function setOrderDirectionDesc(): DtoInterface;
-
-    public function setOrderDirectionAsc(): DtoInterface;
+    public function setOrderDirection(string $orderDirection): DtoInterface;
 }
