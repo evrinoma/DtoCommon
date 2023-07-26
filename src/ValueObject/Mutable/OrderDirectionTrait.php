@@ -24,23 +24,11 @@ trait OrderDirectionTrait
      * @param  string       $orderDirection
      * @return DtoInterface
      */
-    protected function setOrderDirection(string $orderDirection = 'ASC'): DtoInterface
+    protected function setOrderDirection(string $orderDirection): DtoInterface
     {
-        if ('ASC' === $orderDirection) {
+        if ('DESC' !== $orderDirection) {
             $this->setOrderDirectionAsc();
-        } else {
-            $this->setOrderDirectionDesc();
         }
-
-        return $this;
-    }
-
-    /**
-     * @return DtoInterface
-     */
-    protected function setOrderDirectionDesc(): DtoInterface
-    {
-        $this->orderDirection = 'DESC';
 
         return $this;
     }
