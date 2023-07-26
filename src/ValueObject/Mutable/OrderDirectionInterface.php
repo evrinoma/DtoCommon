@@ -15,12 +15,9 @@ namespace Evrinoma\DtoCommon\ValueObject\Mutable;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
 
-interface DirectionInterface
+interface OrderDirectionInterface
 {
-    /**
-     * @param string $direction
-     *
-     * @return DtoInterface
-     */
-    public function setDirection(string $direction): DtoInterface;
+    public function setOrderDirectionDesc(): DtoInterface;
+
+    public function setOrderDirectionAsc(): DtoInterface;
 }

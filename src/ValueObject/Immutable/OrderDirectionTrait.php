@@ -13,17 +13,15 @@ declare(strict_types=1);
 
 namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
-interface DirectionInterface
+trait OrderDirectionTrait
 {
-    public const DIRECTION = 'direction';
-
-    /**
-     * @return bool
-     */
-    public function hasDirection(): bool;
+    private string $orderDirection = 'DESC';
 
     /**
      * @return string
      */
-    public function getDirection(): string;
+    public function getOrderDirection(): string
+    {
+        return $this->orderDirection;
+    }
 }

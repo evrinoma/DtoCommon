@@ -15,15 +15,15 @@ namespace Evrinoma\DtoCommon\ValueObject\Preserve;
 
 use Evrinoma\DtoBundle\Dto\DtoInterface;
 
-trait DirectionTrait
+trait OrderDirectionTrait
 {
-    /**
-     * @param string $direction
-     *
-     * @return DtoInterface
-     */
-    public function setDirection(string $direction): DtoInterface
+    public function setOrderDirectionDesc(): DtoInterface
     {
-        return parent::setDirection($direction);
+        return parent::setOrderDirectionDesc();
+    }
+
+    public function setOrderDirectionAsc(): DtoInterface
+    {
+        return parent::setOrderDirectionAsc();
     }
 }
