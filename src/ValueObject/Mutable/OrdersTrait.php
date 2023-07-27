@@ -21,13 +21,13 @@ trait OrdersTrait
     use OrdersImmutableTrait;
 
     /**
-     * @param array $attributes
+     * @param array $orders
      *
      * @return DtoInterface
      */
-    protected function setOrders(array $attributes): DtoInterface
+    protected function setOrders(array $orders): DtoInterface
     {
-        $this->attributes = $attributes;
+        $this->orders = $orders;
 
         return $this;
     }
