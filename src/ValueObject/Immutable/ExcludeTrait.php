@@ -15,7 +15,7 @@ namespace Evrinoma\DtoCommon\ValueObject\Immutable;
 
 trait ExcludeTrait
 {
-    private bool  $exclude = false;
+    private bool $exclude = false;
 
     public function isExclude(): bool
     {
